@@ -32,7 +32,11 @@
 			<el-container>
 				<el-header>Cotpear</el-header>
 				<el-main>
-					
+					<el-form :inline="true" :model="BetaForm" :rules="BetaForm.rules" ref="ref_BetaForm" @submit.native.prevent>
+					    <el-form-item label="您的姓名" :prop="name">
+					        <el-input type="text" maxlength="50" v-model="BetaForm.name" ></el-input>
+					    </el-form-item>
+					</el-form>
 				</el-main>
 			</el-container>
 
@@ -46,7 +50,14 @@
 		var BondingPair = new Vue({
 			el: '#app',
 			data: {
-				
+				BetaForm:{
+				    "name":"",
+			            "rules":{
+				        "name":[
+				             { required: true, message: '請輸入名稱' }
+				        ]
+				    }
+				}
 			},
 			methods: {
         
