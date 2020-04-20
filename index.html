@@ -1,0 +1,73 @@
+<!--
+ * Cotpear BondingPair
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="//unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/umd/locale/zh-CN.js"></script>
+    <script src="//unpkg.com/element-ui/lib/umd/locale/zh-TW.js"></script>
+    <script src="//unpkg.com/element-ui/lib/umd/locale/en.js"></script>
+		<style>
+			@font-face {
+				font-family: FF;
+				src: url(https://cdn.jsdelivr.net/gh/justfont/open-huninn-font@master/font/jf-openhuninn-1.0.ttf);
+			}
+
+			#app {
+				font-family: FF, serif;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cotpear</title>
+	</head>
+
+	<body>
+		<div id="app">
+			<el-container>
+				<el-header>Cotpear</el-header>
+				<el-main>
+					
+				</el-main>
+			</el-container>
+
+		</div>
+	</body>
+
+	<script>
+		var BondingPair = new Vue({
+			el: '#app',
+			data: {
+				
+			},
+			methods: {
+        
+			}
+		})
+	</script>
+	<style>
+		.el-header,
+		.el-footer {
+			background-color: #B3C0D1;
+			color: #333;
+			text-align: center;
+			line-height: 60px;
+		}
+
+		.el-main {
+			background-color: #E9EEF3;
+			color: #333;
+			text-align: center;
+			line-height: 20px;
+		}
+
+		.el-picker-panel .el-date-picker {
+			top: 5px !important;
+		}
+	</style>
+</html>
