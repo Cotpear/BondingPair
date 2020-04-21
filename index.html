@@ -8,7 +8,6 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-		<script src="//unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
 		<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 		<script src="https://unpkg.com/element-ui/lib/umd/locale/zh-CN.js"></script>
 		<script src="//unpkg.com/element-ui/lib/umd/locale/zh-TW.js"></script>
@@ -44,9 +43,7 @@
 	</body>
 
 	<script>
-		 Vue.locale('en', ELEMENT.lang.en)
-		 Vue.locale('zh-cn', ELEMENT.lang.zhCN)
-		Vue.locale('zh-tw', ELEMENT.lang.zhTW)
+		ELEMENT.locale(ELEMENT.lang.en)
 		var BondingPair = new Vue({
 			el: '#app',
 			data: {
